@@ -1,22 +1,22 @@
 <template>
 <div class='container'>
     <div class='intro'>
-        <pre style="font-size: 1rem">
+        <p style="font-size: 1.5vw; padding-left: 5%; text-align: left;">
             I am currently a cs master student majoring in game development. Having learnt 3D
             graphics, game engine architecture, I know the basic mathematics we frequently use
             and rendering pipeline in game development.
-
+            <br/>
             I have been coding in C++ since I was a freshman in university. And I also know about
             C, C#, Python, lua, javascript, go, etc.
-
+            <br/>
             I am a beginner in Unreal and currently working on 2 game projects based on unreal. I
             also have projects based on Unity.
-
+            <br/>
             I have some experience about web and mobile development as well as linux.
-
+            <br/>
             The area that interest me most are the graphics and shader part. I like to reproduce
             the photorealistic world in game. I am studying hard to gain more knowledge about them.
-        </pre>
+        </p>
     </div>
     <div class="social-media">
         <span>
@@ -50,6 +50,8 @@ export default {
 .intro {
     text-align: left;
     overflow-warp: normal;
+    margin-left: 10%;
+    line-height: 4vw;
 }
 
 .social-media {

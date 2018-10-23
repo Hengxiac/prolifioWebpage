@@ -15,14 +15,17 @@ el-container.container
       .linkedin
         a(href="https://www.linkedin.com/in/hengxiang-chen-011036171/")
           img(src="../assets/linkedin.svg", height="36", width="36")
-    el-tabs.tabbar(v-model="activeTab", type="border-card", stretch="true", @tab-click="onTabChanged")
-      el-tab-pane.one-tab(label="Gallery" name="gallery")
-        Gallery(:videoSrc=video, :imageSrc=img)
-      el-tab-pane.one-tab(label="Blogs" name="blogs")
+    el-menu.el-menu-demo(:default-active="activeIndex", mode="horizontal", @select="onTabChanged")
+      el-menu-item.one-tab(index="1")
+          |Gallery
+      el-menu-item.one-tab(index="2")
         | Blogs
-      el-tab-pane.one-tab(label="About Me" name="about")
-        AboutMe
-
+      el-menu-item.one-tab(index="3")
+          | AboutMe
+  el-main.main-gallery
+    Gallery(v-if="activeIndex == '1'")
+    AboutMe(v-else-if="activeIndex == '3'")
+    Gallery(v-else)
 </template>
 
 <script>
@@ -32,7 +35,7 @@ export default {
   name: 'MainPage',
   data () {
     return {
-      activeTab: 'gallery',
+      activeIndex: '1',
       demos: {
         img: '../assets/bobaThumbnail.jpg',
         video: 'https://www.youtube.com/watch?v=6wT-A3n7UvM'
@@ -48,7 +51,10 @@ export default {
 
   methods: {
     onTabChanged (tab, event) {
-      this.activeTab = tab
+      // Blogs tab is not activated yet
+      if (tab !== '2') {
+        this.activeIndex = tab
+      }
       console.log(this.activeTab)
     }
   },
@@ -116,6 +122,6 @@ export default {
 }
 
 .one-tab {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 </style>
