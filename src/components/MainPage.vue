@@ -7,15 +7,14 @@ el-container.container
       | Master CS game development student in USC.
     .contact-info
       .email
-        | Email:
         a(href="mailto:hengxiac@usc.edu")
-          | hengxiac@usc.edu
+          img(src="../assets/email.svg", height="36", width="36")
       .git
-        | github: hengxiac
+        a(href="https://github.com/Hengxiac")
+          img(src="../assets/github.svg", height="36", width="36")
       .linkedin
-        | linkedin:
         a(href="https://www.linkedin.com/in/hengxiang-chen-011036171/")
-          | Hengxiang Chen's Linkedin
+          img(src="../assets/linkedin.svg", height="36", width="36")
     el-tabs.tabbar(v-model="activeTab", type="border-card", stretch="true", @tab-click="onTabChanged")
       el-tab-pane.one-tab(label="Gallery" name="gallery")
         Gallery(:videoSrc=video, :imageSrc=img)
@@ -87,11 +86,11 @@ export default {
 }
 
 .email {
-  margin-left: 10%;
+  margin-left: 35%;
 }
 
 .git {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .linkedin {

@@ -22,8 +22,12 @@
         <span>
             <p style="font-size:2rem; margin:0.2rem"><b><i>Blogs&Social Media(In Chinese)</i></b></p>
             <br/>
-            <a class="link" href="https://www.zhihu.com/people/chi-tu-qing-hui-50/posts">zhihu(Chinese)</a>
-            <a class ="link" href="https://www.jianshu.com/u/81f2c8be2f17">Jianshu(Chinese)</a>
+            <a class="link" href="https://www.zhihu.com/people/chi-tu-qing-hui-50/posts">
+                <img src="../assets/zhihu.svg" height="64" width="64">
+            </a>
+            <a class ="link" href="https://www.jianshu.com/u/81f2c8be2f17">
+                <img src="https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png" height="64" width="64">
+            </a>
         </span>
     </div>
 </div>
