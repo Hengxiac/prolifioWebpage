@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="demo-video">
-            <iframe width="90%" height="480"
+            <iframe class="video" allowfullscreen
                 src="https://www.youtube.com/embed/vtrrkp2Iy3U">
             </iframe>
         </div>
@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="demo-video">
-            <iframe width="90%" height="480"
+            <iframe class="video" allowfullscreen
                 src="https://www.youtube.com/embed/6wT-A3n7UvM">
             </iframe>
         </div>
@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="demo-video">
-            <iframe width="90%" height="480"
+            <iframe class="video" allowfullscreen
                 src="https://www.youtube.com/embed/j5S0u9wlXEY">
             </iframe>
         </div>
@@ -157,6 +157,17 @@ export default {
 
 .demo-video {
     margin-left: 10%;
-    padding-bottom: 0.5rem;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 90%;
+    height: 0;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
 }
 </style>
