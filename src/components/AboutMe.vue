@@ -35,7 +35,10 @@
                 <img src="../assets/zhihu.svg" height="64" width="64">
             </a>
             <a class ="link" href="https://www.jianshu.com/u/81f2c8be2f17">
-                <img src="https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png" height="64" width="64">
+                <img src="../assets/jianshu.svg" height="64" width="64">
+            </a>
+            <a class ="link" href="https://twitter.com/achiga4">
+                <img src="../assets/twitter.svg" height="64" width="64">
             </a>
         </span>
     </div>
@@ -69,7 +72,7 @@ export default {
 }
 
 .link {
-    margin: 0.1rem;
+    margin: 0.3rem;
 }
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
