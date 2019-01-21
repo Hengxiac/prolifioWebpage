@@ -24,12 +24,14 @@ el-container.container
           | AboutMe
   el-main.main-gallery
     Gallery(v-if="activeIndex == '1'")
+    Blogs(v-else-if="activeIndex == '2'")
     AboutMe(v-else-if="activeIndex == '3'")
     Gallery(v-else)
 </template>
 
 <script>
 import Gallery from './Gallery.vue'
+import Blogs from './Blogs.vue'
 import AboutMe from './AboutMe.vue'
 export default {
   name: 'MainPage',
@@ -45,22 +47,22 @@ export default {
     }
   },
   created () {
-    // this.demos.push({ 'img': '../assets/bobaThumbnail.jpg', 'video': 'https://www.youtube.com/watch?v=6wT-A3n7UvM'});
-    // this.demos.push('../assets/bobaThumbnail.jpg')
+
   },
 
   methods: {
     onTabChanged (tab, event) {
       // Blogs tab is not activated yet
-      if (tab !== '2') {
-        this.activeIndex = tab
-      }
+      // if (tab !== '2') {
+      this.activeIndex = tab
+      // }
       console.log(this.activeTab)
     }
   },
 
   components: {
     Gallery,
+    Blogs,
     AboutMe
   }
 }
